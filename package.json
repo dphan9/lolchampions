@@ -1,0 +1,36 @@
+{
+  "name": "lolchampions",
+  "version": "0.0.1",
+  "description": "LOL Champions",
+  "scripts": {
+    "start": "npm run tsc && concurrently \"npm run tsc:w\" \"lite-server\" ",
+    "lite": "lite-server",
+    "tsc": "tsc -p ./src",
+    "tsc:w": "tsc -w -p ./src"
+  },
+  "author": "De Phan",
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "^2.4.4",
+    "@angular/compiler": "^2.4.4",
+    "@angular/core": "^2.4.4",
+    "@angular/forms": "^2.4.4",
+    "@angular/http": "^2.4.4",
+    "@angular/platform-browser": "^2.4.4",
+    "@angular/platform-browser-dynamic": "^2.4.4",
+    "@angular/router": "^3.4.4",
+    "@angular/upgrade": "^2.4.4",
+    "angular-in-memory-web-api": "^0.2.4",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "^5.0.3",
+    "systemjs": "^0.19.40",
+    "zone.js": "^0.7.6"
+  },
+  "devDependencies": {
+    "concurrently": "^3.1.0",
+    "lite-server": "^2.2.2",
+    "typescript": "^2.1.5",
+    "@types/node": "^6.0.46"
+  }
+}

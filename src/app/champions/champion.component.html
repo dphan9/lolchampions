@@ -1,0 +1,11 @@
+<div *ngIf="champion">
+    <img class="profile" src="{{championImgUrl}}" />
+    <label>{{champion.name}}, {{champion.title}}</label>
+    <div *ngIf="champion.spells">
+        <ul class="spells">
+            <li *ngFor="let spell of champion.spells">
+                <champion-spell [spell]="spell"></champion-spell>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+node_modules
+.vscode
+jspm_packages
+
+src/**/*.js
+!src/systemjs.config.js
+*.js.map
+e2e/**/*.js
+e2e/**/*.js.map
