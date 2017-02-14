@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "description": "LOL Champions",
   "scripts": {
-    "start": "npm run tsc && concurrently \"npm run tsc:w\" \"lite-server\" ",
-    "lite": "lite-server",
-    "tsc": "tsc -p ./src",
-    "tsc:w": "tsc -w -p ./src"
+    "build": "tsc -p src/",
+    "build:watch": "tsc -p src/ -w",
+    "serve": "lite-server -c=bs-config.json",
+    "start": "concurrently \"npm run build:watch\" \"npm run serve\""
   },
   "author": "De Phan",
   "license": "MIT",

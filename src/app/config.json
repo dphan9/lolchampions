@@ -1,6 +1,6 @@
 {
     "apiKey": "4ed3676b-56d8-4a44-8269-31b2cfb9b905",
-    "dataVersion": "7.2.1",
+    "dataVersion": "7.3.1",
     "locale": "en_US",
     "defaultRegion": "NA",
     "championApiUrl":"https://global.api.pvp.net/api/lol/static-data/{region}/v1.2/champion/{id}?api_key={apiKey}&champData={data}",
